@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.first.test.MainActivity">
+
+    <TextView
+        android:id="@+id/tvUser"
+        android:text="@string/tvuser"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        />
+    <EditText
+        android:id="@+id/etUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvUser"
+        android:hint="@string/etuser"/>
+
+    <TextView
+        android:id="@+id/tvPassword"
+        android:text="@string/tvpassword"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etUser"/>
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvPassword"
+        android:hint="@string/etpassword"
+        android:inputType="textPassword"/>
+
+    <Button
+        android:id="@+id/btLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etPassword"
+        android:text="@string/btlogin"/>
+
+    <Button
+        android:id="@+id/btExit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btnext"
+        android:layout_marginRight="11dp"
+        android:layout_marginEnd="11dp"
+        android:layout_below="@+id/etPassword"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:layout_below="@+id/btLogin"
+        android:textSize="38sp"
+        android:textStyle="bold"
+        android:textColor="#FF0000"
+        android:text="@string/tvresult" />
+
+    <ImageView
+        android:id="@+id/ivShow"
+        android:src="@drawable/pc1"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_below="@+id/btLogin" />
+
+    <CheckBox
+        android:id="@+id/cbMerge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/ivShow"
+        android:text="@string/cbmerge"/>
+
+
+
+    <com.example.first.test.MoveView
+        android:id="@+id/moveView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop = "true"
+        android:layout_alignParentLeft="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FF1111"
+        android:id="@+id/tvWrite"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/tvPos"
+        android:layout_alignEnd="@+id/tvPos" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FD1111"
+        android:id="@+id/tvPos"
+        android:layout_above="@+id/etPassword"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:src="@drawable/pre"
+        android:layout_marginTop="61dp"
+        android:id="@+id/ivPre"
+        android:layout_below="@+id/tvResult"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/tvPassword"
+        android:layout_alignEnd="@+id/tvPassword" />
+
+
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:src="@drawable/next"
+        android:id="@+id/ivNext"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/ivPre" />
+
+</RelativeLayout>
