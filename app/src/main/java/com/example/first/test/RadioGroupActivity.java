@@ -66,12 +66,22 @@ public class RadioGroupActivity extends Activity {
             switch (radioGroup.getId()){
             case R.id.rg1:
                 if(i == R.id.rbAmplification) {
+<<<<<<< HEAD
                     iv.setScaleX(0.5f);
                     iv.setScaleY(0.5f);
                 }
                 else{
                     iv.setScaleX(0.2f);
                     iv.setScaleY(0.2f);
+=======
+                    iv.setMaxHeight(100);
+                    iv.setMaxWidth(100);
+                    //或者是setFrame()
+                }
+                else{
+                    iv.setMaxHeight(10);
+                    iv.setMaxWidth(10);
+>>>>>>> 9daea7a232db5f0cd57bf17c3643fc8ff9d0cfc2
                 }
             break;
             case R.id.rg2:

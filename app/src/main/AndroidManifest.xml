@@ -9,7 +9,11 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <!--<activity android:name=".MainActivity">-->
+<<<<<<< HEAD
         <activity android:name=".Menu">
+=======
+        <activity android:name=".Tenth">
+>>>>>>> 9daea7a232db5f0cd57bf17c3643fc8ff9d0cfc2
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -17,7 +21,11 @@
             </intent-filter>
         </activity>
 
+<<<<<<< HEAD
         <!--<activity android:name=".RadioGroupActivity">
+=======
+        <activity android:name=".RadioGroupActivity">
+>>>>>>> 9daea7a232db5f0cd57bf17c3643fc8ff9d0cfc2
             <intent-filter>
                 <action android:name="com.example.first.test.RadioGroupActivity"/>
 
@@ -41,7 +49,11 @@
             </intent-filter>
         </activity>
 
+<<<<<<< HEAD
         <activity android:name=".Fifth">
+=======
+        <!--<activity android:name=".Fifth">
+>>>>>>> 9daea7a232db5f0cd57bf17c3643fc8ff9d0cfc2
             <intent-filter>
                 <action android:name="com.example.first.test.Fifth"/>
 

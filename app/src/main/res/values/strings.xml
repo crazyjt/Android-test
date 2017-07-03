@@ -1,7 +1,11 @@
 <resources>
     <string name="app_name">Login</string>
     <string name="tvuser">用户名</string>
+<<<<<<< HEAD
     <string name="tvpassword">密 码</string>
+=======
+    <string name="tvpassword">密码</string>
+>>>>>>> 9daea7a232db5f0cd57bf17c3643fc8ff9d0cfc2
     <string name="etuser">请输入用户名</string>
     <string name="etpassword">请输入密码</string>
     <string name="btlogin">Login</string>
