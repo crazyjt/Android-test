@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="5">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:orientation="vertical">
+            <EditText
+                android:id="@+id/etAddSinger"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/etaddsinger"/>
+            <EditText
+                android:id="@+id/etAddSongCOunt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/etaddsongcount"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/btnadd"
+            android:textSize="30sp"
+            android:layout_weight="1"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tvTest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <ListView
+        android:id="@+id/lvBaseAdapater"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

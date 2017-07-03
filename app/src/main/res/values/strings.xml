@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Login</string>
+    <string name="tvuser">用户名</string>
+    <string name="tvpassword">密 码</string>
+    <string name="etuser">请输入用户名</string>
+    <string name="etpassword">请输入密码</string>
+    <string name="btlogin">Login</string>
+    <string name="btnext">下一页</string>
+    <string name="tvresult">用户名或密码错误!</string>
+    <string name="cbmerge">合并图</string>
+    <string name="tv1">操作类型:</string>
+    <string name="tv2">图片选择:</string>
+    <string name="btnshow">Show</string>
+    <string name="btnadd">添加</string>
+    <string name="etaddsinger">歌手名</string>
+    <string name="etaddsongcount">歌曲数目</string>
+    <string name="btnProgressBar">开始</string>
+</resources>
