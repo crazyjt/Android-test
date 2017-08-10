@@ -33,6 +33,7 @@ public class Ninth extends Activity {
                 i++;
                 //发送消息，通知主线程修改界面
                 handler.sendEmptyMessage(0X001);
+                System.out.println("Timer's Thread： " + Thread.currentThread().getName());
             }
             else {
                 handler.sendEmptyMessage(0X002);
@@ -47,6 +48,7 @@ public class Ninth extends Activity {
                 case 0X001:
                     tv1.setText(i + "");
                     progressBar.setProgress(i);
+                    System.out.println("Handler's Thread: " + Thread.currentThread().getName());
                     break;
                 case 0X002:
                     //删除定时器任务和定时器
@@ -67,6 +69,7 @@ public class Ninth extends Activity {
         tv2 = (TextView)findViewById(R.id.tvSeekBar);
         button = (Button)findViewById(R.id.btnProgress);
 
+        System.out.println("Activity's Thread: " + Thread.currentThread().getName());
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

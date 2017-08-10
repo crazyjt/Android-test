@@ -40,7 +40,7 @@ public class Menu extends Activity {
         subMenu.add(2, 2, 2, "二级菜单三");
         subMenu.add(2, 3, 3, "二级菜单四");
         subMenu.add(2, 4, 4, "二级菜单五");
-        //设置组1不可见
+        //设置组1不可点击
         subMenu.setGroupEnabled(1,false);
 
         getMenuInflater().inflate(R.menu.main,menu);
